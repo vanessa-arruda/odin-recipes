@@ -77,12 +77,12 @@
 
 /*middle*/
 .middle-container {
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     display: flex;
-    justify-content:space-between;
-    margin-top: 50px;
+    justify-content:space-space space-evenly;
+    margin-top: 30px;
 }
-
+/*middle left container (image)*/
 .middle-image-left {
     /*border: 2px solid blue;*/
     justify-content:flex-start;
@@ -90,11 +90,56 @@
     height: 550px;
     background-image:url(./images/food-bg.jpeg);
     background-size:cover;
-    padding-left: 0px;
-    margin-left: 0px;
+}
+/*middle right container*/
+.recipes-sugestions {
+    justify-content: flex-end;
+    padding-left: 30px;
+    padding-right: 50px;
+    width: 700px;
+
 }
 
-.recipes-sugestions {
-    border: 2px solid pink;
-    justify-content: flex-end;
+.topic-h3-middle-right {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: darkred;
+    align-items: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.row-recipes a {
+    font-size: 13px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.recipes-sugestions p { 
+    font-size: 13px;
+}
+
+.sugestion-one {
+    display: flex;
+    justify-content: left;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    word-wrap: break-word;
+}
+
+.sugestion-two {
+    display: flex;
+    justify-content: left;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    word-wrap: break-word;
+}
+
+.sugestion-three {
+    display: flex;
+    justify-content: left;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    word-wrap: break-word;
 }
