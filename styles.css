@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Open-Sans;
+    src: url(./fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+/*Remove all margins to have clean layout initially*/
+/*Top bar*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open-Sans";
+    font-weight: bold;
+}
+
+.menu-container {
+    background-color:darkred;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    /* border: 1px solid black; */
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* border: 1px solid black; */
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+.links {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.login {
+    margin-left: 20px;
+}
+/*Logo
