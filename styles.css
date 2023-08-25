@@ -22,7 +22,7 @@
 
 .menu {
     /* border: 1px solid black; */
-    width: 1400px;
+    width: 1350px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,31 +75,39 @@
     padding-top: 5px;
 }
 
-/*middle*/
-.middle-container {
-    /*border: 2px solid black;*/
+/*middle for both main image and suggestions layout area*/
+.middle-main-container {
     display: flex;
-    justify-content:space-space space-evenly;
+    justify-content: center;
     margin-top: 30px;
 }
-/*middle left container (image)*/
-.middle-image-left {
-    /*border: 2px solid blue;*/
-    justify-content:flex-start;
-    width: 800px;
-    height: 550px;
-    background-image:url(./images/food-bg.jpeg);
-    background-size:cover;
+
+/*immediate parent to image and suggestion*/
+.middle-container {
+width: 1400px;
+display: flex;
+justify-content: space-between;
 }
-/*middle right container*/
-.recipes-sugestions {
+
+/*middle left container for image only */
+.middle-image-left {
+    justify-content:flex-start;
+    display: flex;
+}
+
+#banner-img {
+    width: 100%;
+}
+
+/*middle right container - for the recipes suggestions*/
+.recipes-suggestions-main-container {
     justify-content: flex-end;
     padding-left: 30px;
-    padding-right: 50px;
-    width: 700px;
-
+    padding-right: 30px;
+    width: 800px;
 }
 
+/*title of suggestions container*/
 .topic-h3-middle-right {
     display: flex;
     justify-content: center;
@@ -108,38 +116,50 @@
     align-items: center;
     color: white;
     margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.row-recipes a {
+.row-recipes {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    flex-direction: column;
+}
+/*parent for image suggestion and text suggestion boxes*/
+.suggestion {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.suggestion-img {
+    width: 46%;
+    display: flex;
+}
+
+.suggestion-text {
+    display: flex;
+    width: 100%;
+    height: 150px;
     font-size: 13px;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.suggestion-title {
+    padding-right: 5px;
+    font-size: 14px;
     font-weight: bold;
-    justify-content: center;
+    height: 25px;
+    width: 100%;
+    color: white;
+    background-color:chocolate;
+    text-decoration: none;
+    text-align: center;
 }
-
-.recipes-sugestions p { 
-    font-size: 13px;
-}
-
-.sugestion-one {
-    display: flex;
-    justify-content: left;
-    padding-right: 5px;
-    padding-bottom: 15px;
-    word-wrap: break-word;
-}
-
-.sugestion-two {
-    display: flex;
-    justify-content: left;
-    padding-right: 5px;
-    padding-bottom: 15px;
-    word-wrap: break-word;
-}
-
-.sugestion-three {
-    display: flex;
-    justify-content: left;
-    padding-right: 5px;
-    padding-bottom: 15px;
-    word-wrap: break-word;
+.suggestion-description {
+    padding-top: 5px;
 }
